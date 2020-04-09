@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  api:
+    build: ./api
+    container_name: crudapp_api
+    ports:
+     - "8888:8888"
+
+  db:
+    build: ./db
+    container_name: crudapp_db
+    environment:
+      MYSQL_DATABASE: crudappdb
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: 0.0.0.0
+    ports:
+      - "3306:3306"

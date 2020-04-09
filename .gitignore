@@ -1,0 +1,3 @@
+api/env
+api/logic/*.pyc
+api/logic/__pycache__
