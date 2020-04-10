@@ -4,8 +4,8 @@ services:
   api:
     build: ./api
     container_name: crudapp_api
-    ports:
-     - "8888:8888"
+    expose:
+     - "8888"
 
   db:
     build: ./db
@@ -14,5 +14,11 @@ services:
       MYSQL_DATABASE: crudappdb
       MYSQL_ROOT_PASSWORD: root
       MYSQL_ROOT_HOST: 0.0.0.0
+    expose:
+      - "3306"
+
+  nginx:
+    build: ./nginx
+    container_name: crudapp_nginx
     ports:
-      - "3306:3306"
+      - "80:80"
