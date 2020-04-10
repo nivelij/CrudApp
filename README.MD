@@ -50,7 +50,7 @@ Once build is successful, run:
 docker-compose up
 ```
 
-Once it is up, access http://localhost:8888 from your browser, and make sure you receive a HTTP 200 response.
+Once it is up, access http://localhost from your browser, and make sure you receive a HTTP 200 response.
 
 ## Acknowledgments
 
