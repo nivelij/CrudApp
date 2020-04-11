@@ -12,3 +12,5 @@ CREATE TABLE foods (
 CREATE USER 'appuser' IDENTIFIED BY 'apppwd';
 
 GRANT ALL ON *.* TO 'appuser'@'localhost' IDENTIFIED BY 'apppwd';
+
+GRANT ALL ON *.* TO 'appuser' IDENTIFIED BY 'apppwd';
